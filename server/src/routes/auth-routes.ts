@@ -7,6 +7,7 @@ import dotenv from 'dotenv';
 dotenv.config();
 
 export const login = async (req: Request, res: Response) => {
+  console.log(req.body);
   // TODO: If the user exists and the password is correct, return a JWT token
   const { username, password } = req.body;
 
@@ -32,7 +33,7 @@ export const login = async (req: Request, res: Response) => {
 };
 
 const router = Router();
-
+router.post("/test", (_req,res)=> res.status(200).json("test Route"))
 // POST /login - Login a user
 router.post('/login', login);
 
