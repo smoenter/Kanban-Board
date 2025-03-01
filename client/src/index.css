@@ -54,7 +54,7 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: #da8ecf;
   cursor: pointer;
   transition: border-color 0.25s;
 }
@@ -183,12 +183,13 @@ tbody tr:nth-child(odd) {
 .form {
   width: 60%;
   height: 80%;
-  background-color: #b864c4;
+  background-color: #ed7bfc;
   margin: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 20px;
 }
 
 .form > h1, .form > label {
